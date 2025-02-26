@@ -1,904 +1,932 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;
-    text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  text-decoration: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .main-menu-100 {
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    z-index: 9;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+  z-index: 100; /* Ensures it stays above other content */
 }
 
 .main-menu {
-    width: 1170px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-    /* border: 1px solid red; */
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
 }
 
 .logo {
-    /* border: 1px solid red; */
-    width: 100px;
+  /* border: 1px solid red; */
+  width: 100px;
 }
 
 .menu ul {
-    list-style: none;
-    display: flex;
-    color: #004282;
-    padding-left: 87px;
-    align-items: center;
-    justify-content: space-between;
+  list-style: none;
+  display: flex;
+  color: #004282;
+  padding-left: 87px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu ul li {
-    display: inline-block;
-    text-align: right;
-    /* padding: 0px 9px; */
-    font-size: 13px;
-    margin-right: 30px;
-    font-weight: 600;
-    /* color: #004282; */
-    line-height: 27px;
+  display: inline-block;
+  text-align: right;
+  /* padding: 0px 9px; */
+  font-size: 13px;
+  margin-right: 30px;
+  font-weight: 600;
+  /* color: #004282; */
+  line-height: 27px;
 }
 .menu ul li a {
-    
-    color: #004282;
-    
+  color: #004282;
 }
 
 .book-online {
-    background: #3db138;
-    color: white;
-    margin-right: 10px;
-    position: relative;
+  background: #3db138;
+  color: white;
+  margin-right: 10px;
+  position: relative;
 }
 .book-online span {
-    background: #3db138;
-    color: white;
-    display: table;
-    padding: 5px 10px;
+  background: #3db138;
+  color: white;
+  display: table;
+  padding: 5px 10px;
 }
 
 .megamenumore div input {
-    width: 434px;
-    background-color: #f0f4f5;
-    height: 40px;
-    padding-left: 16px;
+  width: 434px;
+  background-color: #f0f4f5;
+  height: 40px;
+  padding-left: 16px;
 }
 
 div textarea {
-    width: 400px;
-    height: 100px;
+  width: 400px;
+  height: 100px;
 }
 
 div select {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .megamenumore p {
-    color: #aeb4b9;
-    font-size: 14px;
-    text-align: center;
+  color: #aeb4b9;
+  font-size: 14px;
+  text-align: center;
 }
 
 .megamenumore {
-    width: 500px;
-    text-align: center;
-    background: #f0f4f5;
-    left: -546px;
-    position: absolute;
-    display: none;
-    /* opacity: 0 */
+  width: 500px;
+  text-align: center;
+  background: #f0f4f5;
+  left: -546px;
+  position: absolute;
+  display: none;
+  /* opacity: 0 */
 }
 
 .book-online:hover .megamenumore {
-    /* opacity: 1; */
-    display: block;
+  /* opacity: 1; */
+  display: block;
 }
 
 .megamenumore h3 {
-    color: black;
-    /* padding: 20px 22px; */
-    text-align: left;
+  color: black;
+  /* padding: 20px 22px; */
+  text-align: left;
 }
 
 .btn-form {
-    text-align: center;
-    margin: auto;
-    width: 400px;
-    background-color: #3db138;
-    padding: 30px 0px;
+  text-align: center;
+  margin: auto;
+  width: 400px;
+  background-color: #3db138;
+  padding: 30px 0px;
 }
 
 .call-us {
-    color: #f3842f;
-    border:2px solid #f3842f;
-    font-size: 15px;
-    font-weight: bold;
-    border: 2px solid;
-    padding: 7px 10px;
-    line-height: 22px;
+  color: #f3842f;
+  border: 2px solid #f3842f;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid;
+  padding: 7px 10px;
+  line-height: 22px;
 }
 
 .row2-img {
-    width: 100%;
+  width: 100%;
 }
 
 .row2-img img {
-    border-top: 116px solid rgb(244 229 229 / 67%);
-    width: 100%;
+  border-top: 116px solid rgb(244 229 229 / 67%);
+  width: 100%;
 }
 
 .first1 {
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    border-radius: 50%;
-    position: fixed;
-    top: 30%;
-    right: 20px;
-    z-index: 99;
+  border-radius: 50%;
+  position: fixed;
+  top: 30%;
+  right: 40px;
+  z-index: 99;
+}
+.first1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .first2 {
-    right: 20px;
-    top: 40%;
-    position: fixed;
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    border-radius: 50%;
-    z-index: 99;
+  border-radius: 50%;
+  position: fixed;
+  top: 40%;
+  right: 40px;
+  z-index: 99;
+}
+
+.first2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .first3 {
-    right: 20px;
-    top: 50%;
-    position: fixed;
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    border-radius: 50%;
-    z-index: 99;
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  z-index: 99;
+}
+
+.first3 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .first4 {
-    right: 20px;
-    top: 60%;
-    position: fixed;
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    border-radius: 50%;
-    z-index: 99;
+  border-radius: 50%;
+  position: fixed;
+  top: 60%;
+  right: 40px;
+  z-index: 99;
+}
+
+.first4 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .first5 {
-    right: 20px;
-    top: 70%;
-    position: fixed;
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    border-radius: 50%;
-    z-index: 99;
+  border-radius: 50%;
+  position: fixed;
+  top: 70%;
+  right: 40px;
+  z-index: 99;
 }
 
+.first5 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .first6 {
-    right: 20px;
-    top: 80%;
-    position: fixed;
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    border-radius: 50%;
-    z-index: 99;
+  border-radius: 50%;
+  position: fixed;
+  top: 80%;
+  right: 40px;
+  z-index: 99;
+}
+
+.first6 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .Are-you-interested-in-FREE-Site-Visit-100 {
-    width: 100%;
-    background-color: #306598;
+  width: 100%;
+  background-color: #306598;
 }
 
 .Are-you-interested-in-FREE-Site-Visit-100 h3 {
-    padding: 32px 75px;
-    color: #fff;
-    font-size: 25px;
+  padding: 32px 75px;
+  color: #fff;
+  font-size: 25px;
 }
 
 .Are-you-interested-in-FREE-Site-Visit {
-    width: 1170px;
-    /* border: 1px solid red; */
-    margin: auto;
-    justify-content: space-between;
-    display: flex;
-    padding: 40px 0px;
+  width: 1170px;
+  /* border: 1px solid red; */
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  padding: 40px 0px;
 }
 
 .name {
-    flex-basis: 25%;
+  flex-basis: 25%;
 }
 
 .btn {
-    height: 44px;
-    flex-basis: 25%;
+  height: 44px;
+  flex-basis: 25%;
 }
 
 .btn button {
-    height: 49px;
-    width: 90%;
-    background-color: #3db138;
+  height: 49px;
+  width: 90%;
+  background-color: #3db138;
 }
 
 .text-site-visited {
-    height: 44px;
-    width: 90%;
+  height: 44px;
+  width: 90%;
 }
 
 .why-smart-city-100 {
-    width: 100%;
-    background: #f3f3f3;
+  width: 100%;
+  background: #f3f3f3;
 }
 
 .why-smart-city-100 h3 {
-    text-align: center;
-    line-height: 20px;
-    padding-top: 40px;
-    font-size: 30px;
-    color: #306598;
+  text-align: center;
+  line-height: 20px;
+  padding-top: 40px;
+  font-size: 30px;
+  color: #306598;
 }
 
 .why-smart-city-100 p {
-    text-align: center;
-    line-height: 20px;
-    padding-top: 20px;
-    padding-bottom: 40px;
+  text-align: center;
+  line-height: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .why-smart-city {
-    width: 1170px;
-    margin: auto;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .smart-city-img {
-    flex-basis: 30%;
-    padding-top: 30px;
-    padding-bottom: 40px;
+  flex-basis: 30%;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .PROJECT-OVERVIEW {
-    width: 1170px;
-    margin: auto;
-    display: flex;
+  width: 1170px;
+  margin: auto;
+  display: flex;
 }
 
 .img img {
-    flex-basis: 45%;
-    margin: 1%;
-    margin: 40px 0px;
-    border: 1px solid red;
+  flex-basis: 45%;
+  margin: 1%;
+  margin: 40px 0px;
+  border: 1px solid red;
 }
 
 .h3pulli {
-    flex-basis: 45%;
-    margin: 1%;
-    margin-left: 40px;
-    border: 1px solid r
+  flex-basis: 45%;
+  margin: 1%;
+  margin-left: 40px;
+  border: 1px solid r;
 }
 
 .h3pulli h3 {
-    color: #306598;
-    font-size: 26px;
-    padding: 15px 0px;
+  color: #306598;
+  font-size: 26px;
+  padding: 15px 0px;
 }
 
 .h3pulli p:nth-child(2) {
-    line-height: 29px;
-    padding: 10px 0px;
+  line-height: 29px;
+  padding: 10px 0px;
 }
 
 .h3pulli p:nth-child(3) {
-    line-height: 29px;
-    padding: 10px 0px;
+  line-height: 29px;
+  padding: 10px 0px;
 }
 
 .h3pulli ul li {
-    line-height: 27px;
-    padding: 5px 0px;
-    font-size: 13px;
+  line-height: 27px;
+  padding: 5px 0px;
+  font-size: 13px;
 }
 
 .h3pulli button {
-    background: green;
-    color: #d9d9d9;
-    margin-top: 9px;
+  background: green;
+  color: #d9d9d9;
+  margin-top: 9px;
 }
 
 .btn-book-now {
-    width: 131px;
-    text-align: center;
-    height: 37px;
-    background-color: #3db138;
+  width: 131px;
+  text-align: center;
+  height: 37px;
+  background-color: #3db138;
 }
 
 .MORE-THAN-JUST-A-PLOT-100 {
-    width: 100%;
-    background-color: #f5eeee;
-    padding: 30px 0px;
+  width: 100%;
+  background-color: #f5eeee;
+  padding: 30px 0px;
 }
 
 .MORE-THAN-JUST-A-PLOT {
-    width: 1170px;
-    margin: auto;
-    /* border: 1px solid red; */
+  width: 1170px;
+  margin: auto;
+  /* border: 1px solid red; */
 }
 
 .MORE-THAN-JUST-A-PLOT-100 h3 {
-    text-align: center;
-    font-size: 25px;
-    color: #004282;
-    padding: 20px 0px;
+  text-align: center;
+  font-size: 25px;
+  color: #004282;
+  padding: 20px 0px;
 }
 
 .MORE-THAN-JUST-A-PLOT p {
-    font-size: 17px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 28px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 28px;
 }
 
 .security-auto {
-    width: 1170px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    /* border: 1px solid red; */
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
 }
 
 .security {
-    display: flex;
-    margin: 10px 0px;
-    width: 30%;
-    /* border: 1px solid red; */
+  display: flex;
+  margin: 10px 0px;
+  width: 30%;
+  /* border: 1px solid red; */
 }
 
 .security-3 {
-    position: relative;
-    display: flex;
-    margin: 10px 0px;
-    width: 30%;
-    /* border: 1px solid red; */
+  position: relative;
+  display: flex;
+  margin: 10px 0px;
+  width: 30%;
+  /* border: 1px solid red; */
 }
 
 .security img {
-    width: 100px;
-    padding-top: 30px;
-    height: 100px;
+  width: 100px;
+  padding-top: 30px;
+  height: 100px;
 }
 
 .security-3 img {
-    position: absolute;
-    left: 212px;
-    width: 100px;
-    top: -17px;
-    padding-top: 30px;
-    height: 100px;
+  position: absolute;
+  left: 212px;
+  width: 100px;
+  top: -17px;
+  padding-top: 30px;
+  height: 100px;
 }
 
 .security-2 img {
-    height: 729px;
+  height: 729px;
 }
 
 .security h3 {
-    padding: 26px 20px;
+  padding: 26px 20px;
 }
 
 .security-img {
-    width: 30%;
-    display: flex;
+  width: 30%;
+  display: flex;
 }
 
 .width {
-    /* border: 1px solid rgb(0, 217, 255); */
-    width: 30%;
+  /* border: 1px solid rgb(0, 217, 255); */
+  width: 30%;
 }
 
 .PBRERA-SAS81-PR0693 {
-    width: 1170px;
-    margin: auto;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    position: relative;
+  width: 1170px;
+  margin: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  position: relative;
 }
 
 .PBRERA-SAS81-PR0693 img {
-    width: 200px;
-    height: 200px;
-    padding-bottom: 35px;
-    text-align: center;
+  width: 200px;
+  height: 200px;
+  padding-bottom: 35px;
+  text-align: center;
 }
 
 .PBRERA-SAS81-PR0693 h4 {
-    text-align: center;
-    position: absolute;
-    bottom: 4px;
+  text-align: center;
+  position: absolute;
+  bottom: 4px;
 }
 
 .register {
-    width: 1170px;
-    margin: auto;
-    /* border: 1px solid red; */
-    padding: 30px 0px;
+  width: 1170px;
+  margin: auto;
+  /* border: 1px solid red; */
+  padding: 30px 0px;
 }
 
 .register :nth-child(1) {
-    line-height: 25px;
-    padding: 15px 0px;
+  line-height: 25px;
+  padding: 15px 0px;
 }
 
 .register :nth-child(2) {
-    line-height: 25px;
-    padding: 15px 0px;
+  line-height: 25px;
+  padding: 15px 0px;
 }
 
 .register :nth-child(3) {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .feature {
-    width: 1170px;
-    margin: auto;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .feature-img {
-    flex-basis: 23%;
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 31px 0px;
+  flex-basis: 23%;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 31px 0px;
 }
 
 .br-hr {
-    width: 1170px;
-    margin: auto;
+  width: 1170px;
+  margin: auto;
 }
 
 .PRICE-LIST {
-    width: 1170px;
-    margin: auto;
-    text-align: center;
-    padding: 30px 0px;
-    font-weight: bold;
-    font-size: 25px;
-    color: #306598;
+  width: 1170px;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0px;
+  font-weight: bold;
+  font-size: 25px;
+  color: #306598;
 }
 
 .AVAIL-LIMITED-PERIOD-OFFERS {
-    width: 1000px;
-    margin: auto;
-    /* border: 1px solid red; */
+  width: 1000px;
+  margin: auto;
+  /* border: 1px solid red; */
 }
 
 .AVAIL-LIMITED-PERIOD-OFFERS h3 {
-    text-align: center;
-    font-weight: bold;
-    color: #306598;
-    padding: 30px 0px;
+  text-align: center;
+  font-weight: bold;
+  color: #306598;
+  padding: 30px 0px;
 }
 
 .AVAIL-LIMITED-PERIOD-OFFERS h2 {
-    text-align: center;
-    font-size: 14px;
-    width: 100%;
-    background-color: #004282;
-    font-weight: bold;
-    color: white;
-    padding: 30px 0px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  background-color: #004282;
+  font-weight: bold;
+  color: white;
+  padding: 30px 0px;
 }
 
 .bg-color button {
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    border: none;
-    margin-bottom: 0!important;
-    padding-top: 7.5px;
-    padding-bottom: 7.5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 0 !important;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
 }
 
 .width-1000 {
-    width: 1000px;
-    margin: auto;
-    padding: 50px 0px;
+  width: 1000px;
+  margin: auto;
+  padding: 50px 0px;
 }
 
 .width-1000 div img {
-    width: 1000px;
-    margin: auto;
-    padding: 40px 0px;
+  width: 1000px;
+  margin: auto;
+  padding: 40px 0px;
 }
 
 .HIGHLIGHTS-OF-SMARTCITY {
-    width: 1170px;
-    margin: auto;
-    text-align: center;
-    font-size: 25px;
-    color: #306598;
+  width: 1170px;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  color: #306598;
 }
 
 .flex-100 {
-    width: 1170px;
-    margin: auto;
-    /* border: 1px solid green; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .flex-100 div {
-    flex-basis: 30%;
-    /* border: 1px solid red; */
-    text-align: center;
-    margin: 30px 0px;
+  flex-basis: 30%;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin: 30px 0px;
 }
 
 .flex-100 div img {
-    text-align: center;
+  text-align: center;
 }
 
 .flex-100 div h3 {
-    font-size: 14px;
-    line-height: 21px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .flex-100-div {
-    flex-basis: 30%;
+  flex-basis: 30%;
 }
 
 .book-site-visit {
-    width: 1170px;
-    margin: 40px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
+  width: 1170px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
 }
 
 .book-site-visit div {
-    width: 33%;
-    padding: 30px 0px;
-    /* background-color: #ffc820; */
-    /* border: 1px solid gold; */
+  width: 33%;
+  padding: 30px 0px;
+  /* background-color: #ffc820; */
+  /* border: 1px solid gold; */
 }
 
 .book-site-visit div button {
-    text-align: center;
-    font-size: 40px;
-    padding: 11px 51px;
-    border-radius: 17px;
-    font-weight: bold;
-    background: #ffc820;
+  text-align: center;
+  font-size: 40px;
+  padding: 11px 51px;
+  border-radius: 17px;
+  font-weight: bold;
+  background: #ffc820;
 }
 
 .EXPERIENCE-THE-LOCATION-OF-SMART-CITY-PROJECT {
-    width: 1170px;
-    margin: auto;
+  width: 1170px;
+  margin: auto;
 }
 
 .EXPERIENCE-THE-LOCATION-OF-SMART-CITY-PROJECT h3 {
-    text-align: center;
-    padding: 20px 0px;
-    color: #306598;
-    font-size: 25px;
+  text-align: center;
+  padding: 20px 0px;
+  color: #306598;
+  font-size: 25px;
 }
 
 .EXPERIENCE-THE-LOCATION-OF-SMART-CITY-PROJECT p {
-    text-align: center;
-    font-size: 14px;
+  text-align: center;
+  font-size: 14px;
 }
 
 .you-tube-video {
-    width: 1170px;
-    margin: auto;
-    padding: 35px 0px;
-    display: flex;
-    justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+  padding: 35px 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .you-tube-video div :first-child {
-    flex-basis: 48px;
+  flex-basis: 48px;
 }
 
 .you-tube-video div :last-child {
-    flex-basis: 48%;
+  flex-basis: 48%;
 }
 
 .site-h3-p-img {
-    width: 1000px;
-    margin: auto;
-    /* border: 1px dotted red; */
+  width: 1000px;
+  margin: auto;
+  /* border: 1px dotted red; */
 }
 
 .site-h3-p-img h3 {
-    text-align: center;
-    font-size: 25px;
-    padding: 30px 0px;
-    color: #306598;
+  text-align: center;
+  font-size: 25px;
+  padding: 30px 0px;
+  color: #306598;
 }
 
 .site-h3-p-img p {
-    text-align: center;
-    font-size: 17px;
-    padding: 9px 0px;
-    padding-bottom: 30px;
+  text-align: center;
+  font-size: 17px;
+  padding: 9px 0px;
+  padding-bottom: 30px;
 }
 
 .site-h3-p-img img {
-    /* width: 500px; */
-    text-align: center;
-    margin: auto;
-    height: 500px;
+  /* width: 500px; */
+  text-align: center;
+  margin: auto;
+  height: 500px;
 }
 
 .book-site-visit-2 {
-    width: 1170px;
-    margin: 40px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
+  width: 1170px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
 }
 
 .book-site-visit-2 div {
-    width: 33%;
-    padding: 30px 0px;
-    /* background-color: #ffc820; */
-    /* border: 1px solid gold; */
+  width: 33%;
+  padding: 30px 0px;
+  /* background-color: #ffc820; */
+  /* border: 1px solid gold; */
 }
 
 .book-site-visit-2 div button {
-    text-align: center;
-    font-size: 28px;
-    padding: 11px 51px;
-    border-radius: 17px;
-    font-weight: bold;
-    background: #ffc820;
+  text-align: center;
+  font-size: 28px;
+  padding: 11px 51px;
+  border-radius: 17px;
+  font-weight: bold;
+  background: #ffc820;
 }
 
 .map {
-    width: 100%;
-    margin-top: 50px;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .IMPORTANT-LANDMARKS {
-    width: 1000px;
-    margin: 50px auto;
-    /* border: 1px solid red; */
+  width: 1000px;
+  margin: 50px auto;
+  /* border: 1px solid red; */
 }
 
 .IMPORTANT-LANDMARKS h3 {
-    text-align: center;
-    font-size: 25px;
-    padding: 30px 0px;
-    color: #004282;
+  text-align: center;
+  font-size: 25px;
+  padding: 30px 0px;
+  color: #004282;
 }
 
-.IMPORTANT-LANDMARKS>ul>li {
-    list-style: none;
-    font-weight: bold;
-    padding-left: 50px;
+.IMPORTANT-LANDMARKS > ul > li {
+  list-style: none;
+  font-weight: bold;
+  padding-left: 50px;
 }
 
 .br-hr-3 {
-    width: 950px;
-    margin: auto;
+  width: 950px;
+  margin: auto;
 }
 
 .AMENITIES-h3-p {
-    width: 1000px;
-    margin: auto;
+  width: 1000px;
+  margin: auto;
 }
 
 .AMENITIES-h3-p h3 {
-    text-align: center;
-    font-size: 25px;
-    color: #004282;
-    padding: 15px 0px;
+  text-align: center;
+  font-size: 25px;
+  color: #004282;
+  padding: 15px 0px;
 }
 
 .AMENITIES-h3-p p {
-    text-align: center;
-    font-size: 16px;
-    padding: 15px 0px;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 0px;
 }
 
 .AMENITIES {
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    /* border: 1px solid red; */
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  /* border: 1px solid red; */
 }
 
 .AMENITIES div img {
-    text-align: center;
-    padding-left: 20px;
+  text-align: center;
+  padding-left: 20px;
 }
 
 .faq {
-    width: 1000px;
-    margin: auto;
-    margin-top: 100px;
+  width: 1000px;
+  margin: auto;
+  margin-top: 100px;
 }
 
 .faq h3 {
-    text-align: center;
-    font-size: 25px;
-    color: #004282;
-    padding: 15px 0px;
+  text-align: center;
+  font-size: 25px;
+  color: #004282;
+  padding: 15px 0px;
 }
 
 .faq p {
-    text-align: center;
-    font-size: 16px;
-    padding: 15px 0px;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 0px;
 }
 
 .IMPORTANT-LANDMARKS-2 {
-    width: 1000px;
-    margin: 50px auto;
-    /* border: 1px solid red; */
+  width: 1000px;
+  margin: 50px auto;
+  /* border: 1px solid red; */
 }
 
-.IMPORTANT-LANDMARKS-2>ul>li {
-    list-style: none;
-    padding-left: 50px;
-    font-size: 19px;
-    line-height: 32px;
+.IMPORTANT-LANDMARKS-2 > ul > li {
+  list-style: none;
+  padding-left: 50px;
+  font-size: 19px;
+  line-height: 32px;
 }
 
 .PROJECT-GALLERY {
-    width: 1170px;
-    margin: auto;
-    margin-top: 40px;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-wrap: wrap;
+  width: 1170px;
+  margin: auto;
+  margin-top: 40px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .PROJECT-GALLERY div {
-    flex-basis: 25%;
+  flex-basis: 25%;
 }
 
 .PROJECT-GALLERY div img {
-    width: 250px;
-    margin: auto;
-    height: 300px;
-    padding-left: 18px;
-    padding-bottom: 19px;
+  width: 250px;
+  margin: auto;
+  height: 300px;
+  padding-left: 18px;
+  padding-bottom: 19px;
 }
 
 .HOME-LOAN-FACILITY {
-    width: 1170px;
-    margin: 100px auto;
-    /* border: 1px solid red; */
+  width: 1170px;
+  margin: 100px auto;
+  /* border: 1px solid red; */
 }
 
 .HOME-LOAN-FACILITY h3 {
-    text-align: center;
-    font-size: 25px;
-    color: #306598;
-    padding: 24px 0px;
+  text-align: center;
+  font-size: 25px;
+  color: #306598;
+  padding: 24px 0px;
 }
 
 .HOME-LOAN-FACILITY p {
-    text-align: center;
-    font-size: 14px;
-    padding-bottom: 25px;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 25px;
 }
 
 .HOME-LOAN-FACILITY-flex {
-    width: 1170px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .HOME-LOAN-FACILITY-flex div img {
-    width: 150px;
-    height: 150px;
-    border: 3px solid #0000001c;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #0000001c;
 }
 
 .SCHEDULE-YOUR-SITE-VISIT-100 {
-    width: 100%;
-    height: 500px;
-    background-color: #cccccc45;
+  width: 100%;
+  height: 500px;
+  background-color: #cccccc45;
 }
 
 .SCHEDULE-YOUR-SITE-VISIT {
-    width: 1170px;
-    position: relative;
-    margin: auto;
-    top: 50px;
-    border: 3px solid blue;
-    display: flex;
-    justify-content: space-between;
+  width: 1170px;
+  position: relative;
+  margin: auto;
+  top: 50px;
+  border: 3px solid blue;
+  display: flex;
+  justify-content: space-between;
 }
 
 .SCHEDULE-YOUR-SITE-VISIT div h3 {
-    font-size: 25px;
-    color: #004282;
-    line-height: 67px;
-    padding-top: 71px;
+  font-size: 25px;
+  color: #004282;
+  line-height: 67px;
+  padding-top: 71px;
 }
 
 .SCHEDULE-YOUR-SITE-VISIT div p {
-    font-size: 14px;
-    line-height: 29px;
+  font-size: 14px;
+  line-height: 29px;
 }
 
 .SCHEDULE-YOUR-SITE-VISIT div img {
-    width: 100%;
-    flex-basis: 48%;
+  width: 100%;
+  flex-basis: 48%;
 }
 
 .SCHEDULE-YOUR-SITE-VISIT div {
-    flex-basis: 48%;
-    padding: 10px;
+  flex-basis: 48%;
+  padding: 10px;
 }
 
 .SCHEDULE-YOUR-SITE-VISIT div button {
-    color: white;
-    font-size: 25px;
-    margin-top: 20px;
-    padding: 13px;
-    background-color: #3db138;
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+  padding: 13px;
+  background-color: #3db138;
 }
 
 .footer-100 {
-    width: 100%;
-    background-color: #004282;
+  width: 100%;
+  background-color: #004282;
 }
 
 .footer {
-    width: 1170px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    color: #ccc;
-    padding-top: 100px;
+  width: 1170px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #ccc;
+  padding-top: 100px;
 }
 
 .footer ul {
-    list-style: none;
-    padding-right: 46px;
+  list-style: none;
+  padding-right: 46px;
 }
 
 .footer ul li {
-    text-align: center;
-    line-height: 30px;
+  text-align: center;
+  line-height: 30px;
 }
 
 .footer-100 div p {
-    width: 333px;
-    /* border: 1px solid red; */
-    margin: auto;
-    padding: 100px 0px;
-    color: white;
-    text-align: center;
+  width: 333px;
+  /* border: 1px solid red; */
+  margin: auto;
+  padding: 100px 0px;
+  color: white;
+  text-align: center;
 }
